@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js" defer></script>
+    <title>Mini projekt 2</title>
+  </head>
+  <body>
+    <div id="root">
+      <h1>Rock Paper Scissors</h1>
+      <form>
+        <label for="playerName">Player name:</label>
+        <input type="text" id="playerName" />
+        <button>Enter</button>
+      </form>
+      <h2></h2>
+      <div id="game">
+        <h2>Round</h2>
+        <div class="game-content">
+          <div class="gc-left gc">
+            <h2>Player</h2>
+            <h3>Score 0</h3>
+            <div>
+              <button>
+                <img
+                  class="rps-img"
+                  data-object="rock"
+                  src="./img/rock.png"
+                  alt="rock icon"
+                />
+              </button>
+              <button>
+                <img
+                  class="rps-img"
+                  data-object="paper"
+                  src="./img/paper.png"
+                  alt="paper icon"
+                />
+              </button>
+              <button>
+                <img
+                  class="rps-img"
+                  data-object="scissors"
+                  src="./img/scissors.png"
+                  alt="scissors icon"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="gc-right gc">
+            <h2>Computer</h2>
+            <h3>Score 0</h3>
+            <div>
+              <img src="data:," alt />
+            </div>
+          </div>
+        </div>
+        <div id="choiceText">
+          <h2></h2>
+          <h2></h2>
+        </div>
+        <h2></h2>
+        <h2>Scoreline</h2>
+        <h2></h2>
+        <button id="resetGame">Reset Game</button>
+      </div>
+    </div>
+  </body>
+</html>

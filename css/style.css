@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#root {
+  width: 1000px;
+  min-height: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed black;
+  background-color: #ffd454;
+}
+
+#root > form {
+  padding: 1rem;
+}
+
+#root > form > button {
+  padding: 0 0.5rem;
+}
+
+#game {
+  width: 100%;
+  margin-top: 6rem;
+}
+
+#game > h2 {
+  text-align: center;
+}
+
+.game-content {
+  display: flex;
+  justify-content: space-around;
+  margin: 4rem 0 0;
+}
+
+.gc-left,
+.gc-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.gc-left > div,
+.gc-right > div {
+  margin: 2rem 0;
+}
+
+.gc-left > div > button {
+  /* padding: 0.75rem 1rem; */
+  background: none;
+  border: none;
+}
+
+.gc-left > div > button:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+}
+
+.rps-img {
+  height: 100px;
+  width: 100px;
+}
+
+#choiceText {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 4rem;
+}
+
+#resetGame {
+  display: none;
+  margin: 0 auto 1rem;
+  padding: 0.75rem 1rem;
+}
